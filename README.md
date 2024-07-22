@@ -1,6 +1,7 @@
-# Nuxt Layer Starter
+# Nuxt Layer for Tim Benniks' Components
 
-Create Nuxt extendable layer with this GitHub template.
+This is a Nuxt extendable layer with all Tim's components.
+These can be used in multiple projects.
 
 ## Setup
 
@@ -38,8 +39,8 @@ Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
 defineNuxtConfig({
-  extends: 'your-layer'
-})
+  extends: "your-layer",
+});
 ```
 
 ## Development Server
@@ -69,5 +70,3 @@ Locally preview production build:
 ```bash
 pnpm preview
 ```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
