@@ -1,6 +1,6 @@
 <script setup>
 import Richtext from "./components/richtext.vue";
-import TwoColumn from "./components/twoColumn.vue";
+import TwoColumn from "./components/twoColumns.vue";
 
 const timelineItems = [
   {

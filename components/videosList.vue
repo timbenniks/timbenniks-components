@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const props = defineProps([
   "videos",
-  "folder",
   "small",
   "title",
   "description",
