@@ -1,10 +1,10 @@
 <script setup lang="ts">
-defineProps(["descrioption", "media"]);
+defineProps(["description", "media"]);
 </script>
 <template>
   <div class="p-4 md:p-8 mb-8">
     <h3 class="title page-title inline-block mb-4">Speaker media</h3>
-    <p v-if="descrioption">{{ descrioption }}</p>
+    <p v-if="description">{{ description }}</p>
 
     <figure class="media-grid my-12">
       <div class="media-1">
