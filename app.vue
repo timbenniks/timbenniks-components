@@ -307,8 +307,7 @@ const faqs = [
       subtitletag="h2"
       :right="true"
       title="Tim Benniks"
-      description="DEVELOPER RELATIONS LEADER, SPEAKER, CONTENT CREATOR
-"
+      description="DEVELOPER RELATIONS LEADER, SPEAKER, CONTENT CREATOR"
     >
       <template #image>
         <Image
@@ -375,15 +374,24 @@ const faqs = [
     <TwoColumn>
       <template #sidea>
         <TitleBlock title="This is a title block" tag="h1" :nospace="false" />
-        <Richtext
-          copy="<p>If you enjoy Tim's work and wish to support him, you can subscribe to his YouTube channel or consider sponsoring at <a href='https://buymeacoffee.com/timbenniks'>buymeacoffee</a>.</p>"
+        <Richtext>
+          <p>
+            If you enjoy Tim's work and wish to support him, you can subscribe
+            to his YouTube channel or consider sponsoring at
+            <a href="https://buymeacoffee.com/timbenniks">buymeacoffee</a>.
+          </p>
+        </Richtext>
         />
         <faq :faqs="faqs" />
       </template>
       <template #sideb>
-        <Richtext
-          copy="<p>If you enjoy Tim's work and wish to support him, you can subscribe to his YouTube channel or consider sponsoring at <a href='https://buymeacoffee.com/timbenniks'>buymeacoffee</a>.</p>"
-        />
+        <Richtext>
+          <p>
+            If you enjoy Tim's work and wish to support him, you can subscribe
+            to his YouTube channel or consider sponsoring at
+            <a href="https://buymeacoffee.com/timbenniks">buymeacoffee</a>.
+          </p>
+        </Richtext>
         <Media
           caption="Tim Benniks at Vue.js Amsterdam 2024"
           alt="Tim Benniks at Vue.js Amsterdam 2024 during his Alive and Kicking talk"
