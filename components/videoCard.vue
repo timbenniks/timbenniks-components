@@ -12,7 +12,7 @@ defineProps(["video", "small", "featured"]);
     >
       <div class="relative aspect-video" :class="{ 'md:w-64': small }">
         <NuxtImg
-          v-if="video.image"
+          v-if="video.image !== 'undefined'"
           provider="cloudinaryFetch"
           :src="video.image"
           :alt="`Poster image for: ${video.title}` || ''"
@@ -36,8 +36,10 @@ defineProps(["video", "small", "featured"]);
             'w-full fancy-image-alt': featured,
             'fancy-image': !featured,
           }"
-          class="aspect-video bg-slate-400"
-        ></div>
+          class="aspect-video bg-[#1b1d39] flex items-center justify-around"
+        >
+          <tim class="w-16 opacity-50" />
+        </div>
 
         <div id="playButton" v-if="featured" />
         <div
