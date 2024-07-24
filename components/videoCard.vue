@@ -36,7 +36,7 @@ defineProps(["video", "small", "featured"]);
             'w-full fancy-image-alt': featured,
             'fancy-image': !featured,
           }"
-          class="aspect-video bg-[#1b1d39] flex items-center justify-around"
+          class="aspect-video bg-[#0e1029] flex items-center justify-around"
         >
           <tim class="w-16 opacity-50" />
         </div>
