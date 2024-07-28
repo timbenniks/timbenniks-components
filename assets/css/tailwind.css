@@ -64,7 +64,7 @@
       #256ad1 7.57%,
       #d1258c 95.58%
     );
-    @apply bg-black text-sm border-2 px-4 py-2 uppercase font-black text-white text-center underline;
+    @apply bg-black text-sm border-2 px-[.9rem] py-2 uppercase font-black text-white text-center underline;
   }
 
   header {
