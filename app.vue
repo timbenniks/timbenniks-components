@@ -300,7 +300,7 @@ const faqs = [
 </script>
 <template>
   <main class="mx-auto max-w-[1400px] bg-[#1b1d39]">
-    <GlobalHeader :navigation="navigation" />
+    <GlobalHeader :navigation="navigation" searchurl="/search" />
     <Hero
       :smallertitle="false"
       titletag="h1"
@@ -381,7 +381,7 @@ const faqs = [
             <a href="https://buymeacoffee.com/timbenniks">buymeacoffee</a>.
           </p>
         </Richtext>
-        />
+
         <faq :faqs="faqs" />
       </template>
       <template #sideb>

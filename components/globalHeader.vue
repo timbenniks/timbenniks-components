@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps(["navigation"]);
+defineProps(["navigation", "searchurl"]);
 </script>
 <template>
   <header
@@ -47,6 +47,18 @@ defineProps(["navigation"]);
           class="font-bold uppercase mb-4 lg:mb-0"
         >
           <NuxtLink :to="link.url">{{ link.copy }}</NuxtLink>
+        </li>
+        <li
+          class="font-bold uppercase lg:relative lg:top-1 mb-4 lg:mb-0"
+          v-if="searchurl"
+        >
+          <NuxtLink
+            :to="searchurl"
+            class="flex space-x-2 lg:space-x-0 lg:block"
+          >
+            <span class="lg:hidden">SEARCH</span>
+            <search />
+          </NuxtLink>
         </li>
       </ul>
     </nav>
