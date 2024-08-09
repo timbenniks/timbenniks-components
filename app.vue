@@ -364,7 +364,7 @@ const faqs = [
       </template>
     </Hero>
 
-    <articles
+    <articlesList
       title="Articles"
       :first-featured="true"
       :small="false"
@@ -413,15 +413,16 @@ const faqs = [
       descripiton="Click on the images for their full resolution versions."
     />
 
-    <videos
+    <videosList
       :videos="videoData"
+      :small="false"
       title="videos"
       description="Click on the images for their full resolution versions."
       extras-url="https://timbenniks.dev"
       :first-featured="false"
     />
 
-    <talks :talks="talksData" title="Talks" />
+    <talksList :talks="talksData" title="Talks" />
 
     <Timeline :timeline-items="timelineItems" />
 
