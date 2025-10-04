@@ -25,7 +25,7 @@ function parseImage(imageUrl: string) {
 
   return {
     url: decodedUrl,
-    provider: "cloudinaryNative",
+    provider: "cloudinaryFetch",
   };
 }
 </script>
