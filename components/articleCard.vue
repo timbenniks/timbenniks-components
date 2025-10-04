@@ -4,28 +4,28 @@ defineProps(["article", "small", "featured"]);
 function parseImage(imageUrl: string) {
   const decodedUrl = decodeURIComponent(imageUrl);
 
-  const parsedImage = decodedUrl.split(
-    "https://media.dev.to/cdn-cgi/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/"
-  )[1];
+  // const parsedImage = decodedUrl.split(
+  //   "https://media.dev.to/cdn-cgi/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/"
+  // )[1];
 
-  let url = null;
-  let provider = "cloudinaryNative";
+  // let url = null;
+  // let provider = "cloudinaryNative";
 
-  if (parsedImage?.includes("cloudinary")) {
-    const id = parsedImage.split(
-      "https://res.cloudinary.com/dwfcofnrd/image/upload/"
-    )[1];
+  // if (parsedImage?.includes("cloudinary")) {
+  //   const id = parsedImage.split(
+  //     "https://res.cloudinary.com/dwfcofnrd/image/upload/"
+  //   )[1];
 
-    provider = "cloudinaryNative";
-    url = id;
-  } else {
-    provider = "cloudinaryFetch";
-    url = parsedImage;
-  }
+  //   provider = "cloudinaryNative";
+  //   url = id;
+  // } else {
+  //   provider = "cloudinaryFetch";
+  //   url = parsedImage;
+  // }
 
   return {
-    url,
-    provider,
+    url: decodedUrl,
+    provider: "cloudinaryNative",
   };
 }
 </script>
