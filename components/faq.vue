@@ -5,7 +5,7 @@ defineProps(["faqs"]);
 <template>
   <div itemscope itemtype="https://schema.org/FAQPage">
     <h4 class="title inline-block small mb-4">Frequently asked questions</h4>
-    <ul class="bg-[#0e1029] pt-4 pb-1 px-4">
+    <ul class="bg-[#0e1029] pt-4 pb-1 px-4 list-none">
       <li
         v-for="faq in faqs"
         :key="faq.question"
