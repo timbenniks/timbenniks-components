@@ -81,7 +81,7 @@ function parseImage(imageUrl: string) {
           <div class="flex items-center gap-2">
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,w_96,h_96,c_thumb/Tim/tim_aug_2023.png"
+              src="https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,w_96,h_96,c_thumb/Tim/timreal.png"
               alt="Tim Benniks"
               width="48"
               height="48"
