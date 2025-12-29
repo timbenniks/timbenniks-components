@@ -9,7 +9,7 @@ defineProps(["timelineItems"]);
         <nuxt-link :to="item.url" target="_blank">
           <div class="flex-start flex items-center pt-3">
             <div
-              class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-white"
+              class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white"
             ></div>
             <p class="font-black">{{ item.daterange }}</p>
           </div>

@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@source "../../**";
+
+@theme {
+  --font-sans: "Trebuchet MS", ui-sans-serif, system-ui, sans-serif;
+  --font-title: "Lato", "Trebuchet MS", ui-sans-serif, system-ui, sans-serif;
+}
 
 @layer base {
   body {
@@ -64,7 +69,7 @@
       #256ad1 7.57%,
       #d1258c 95.58%
     );
-    @apply bg-black text-sm border-2 px-[.9rem] py-2 uppercase font-black text-white text-center underline;
+    @apply bg-black text-sm border-2 px-[0.9rem] py-2 uppercase font-black text-white text-center underline;
   }
 
   header {
@@ -149,7 +154,16 @@
   }
 
   .media-grid {
-    @apply grid gap-8 grid-cols-1 md:grid-cols-[0.472fr_0.6fr] md:grid-rows-[1fr_1fr];
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .media-grid {
+      grid-template-columns: 0.472fr 0.6fr;
+      grid-template-rows: 1fr 1fr;
+    }
   }
 
   .media-1 {

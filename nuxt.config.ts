@@ -6,11 +6,7 @@ const currentDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  compatibilityDate: "2024-07-07",
-
-  future: {
-    compatibilityVersion: 4
-  },
+  compatibilityDate: "2025-02-01",
 
   modules: ["@nuxtjs/tailwindcss", "@nuxt/fonts", "@nuxt/image"],
 
@@ -49,6 +45,7 @@ export default defineNuxtConfig({
   ],
 
   tailwindcss: {
-    configPath: join(currentDir, './tailwind.config.js')
+    configPath: join(currentDir, './tailwind.config.ts'),
+    exposeConfig: true
   }
 })
